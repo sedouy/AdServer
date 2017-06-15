@@ -31,5 +31,6 @@ public class SloganServlet extends HttpServlet {
 
         resp.setContentType("application/json");
         resp.setStatus(HttpStatus.OK_200);
+        resp.getWriter().write("");
     }
 }
