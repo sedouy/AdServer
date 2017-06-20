@@ -1,6 +1,6 @@
 package com.brankovsky.test.adserver.adapi;
 
-import com.brankovsky.test.adserver.adapi.api.PlacementsResource;
+import com.brankovsky.test.adserver.adapi.api.PlacementsServerResource;
 import org.restlet.Application;
 import org.restlet.Restlet;
 import org.restlet.routing.Router;
@@ -13,7 +13,7 @@ public class RestletApplication extends Application {
     public Restlet createInboundRoot() {
         Router router = new Router(getContext());
 
-        router.attach("/placements", PlacementsResource.class);
+        router.attach("/placements", PlacementsServerResource.class);
 
         return router;
     }
